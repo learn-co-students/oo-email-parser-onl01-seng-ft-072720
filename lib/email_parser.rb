@@ -16,6 +16,8 @@ class EmailAddressParser
         unique_list = []
         parsed_list.each{ |address| unique_list << address if !unique_list.include?(address)}
         unique_list
+
+        #=> preferred method: @email_addresses.split(/, | /).uniq
     end
 
 end
